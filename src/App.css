@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Softer background */
+  color: #333;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f9fafc; /* Light background for the app */
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Slight scale-up on hover for interactivity */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Faster spin */
+  }
+}
+
+/* Header Styles */
+.App-header {
+  background: linear-gradient(135deg, #282c34 40%, #6c5b7b 100%); /* Gradient with complementary colors */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(14px + 2vmin); /* Slightly larger font size */
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Enhanced text shadow */
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
+}
+
+/* Link Styles */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent; /* Bottom border for interaction */
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+  border-bottom: 2px solid #21a1f1; /* Bottom border changes on hover */
+}
+
+/* Keyframes for Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility Styles */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color:blue;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #21a1f1;
+}
+
+/* Input field styling */
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Media Queries for Responsiveness */ 
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(12px + 2vmin); /* Responsive font sizing */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Smaller logo on smaller screens */
+  }
+}
